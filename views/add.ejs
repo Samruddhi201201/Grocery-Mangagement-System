@@ -1,0 +1,363 @@
+<html>
+                      <head>   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!--fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./pop.css" /> -->
+    <!-- <link href="./styles/pop.css" rel="stylesheet" type="text/css"> -->
+    <title>Document</title>
+    <style>
+      ::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --bg-white: #fff;
+  --primary-text: #061737;
+  --secondary-color: #60cd12;
+  --light-color: #e2f6de;
+  --dark-color: #03262c;
+
+  --font-primary: "Lucida Sans", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(175, 220, 177, 0.52),
+      rgba(0, 4, 2, 0.73)
+    ),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlJTIwc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body,
+html {
+  color: var(--primary-text);
+  font-size: 10px;
+  font-weight: 400;
+  font-family:monospace;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+li a {
+  color: var(--bg-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+.nav-link {
+  font-size: 2rem;
+  color: var(--bg-white);
+  font: 600;
+  padding-left: 6%;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav {
+  color: var(--bg-white);
+}
+.header .navbar {
+  background-color: #63db4e;
+  margin-top: 2%;
+  border-radius: 1%;
+}
+
+.logoimg {
+  border-radius: 50%;
+  width: 60%;
+  margin-left: 26px;
+}
+
+.text-lg-end {
+  padding-right: 30px;
+  font-size: 1rem;
+  /* padding-left: 3%; */
+  color: var(--bg-white);
+  font: 300;
+}
+/* 
+.discard {
+  width: 20%;
+  color: azure;
+  z-index: 1;
+  background-color: #fff;
+  height: 390px;
+  margin-top: 4%;
+} */
+
+.flow {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 150px;
+}
+
+.card {
+  margin: 20px;
+  /* margin-right: 5%; */
+}
+
+.container-fluid {
+  background-color: var(--bg-white);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 130px;
+  width: 70%;
+}
+
+.shopimg {
+  width: 40%;
+
+  margin-left: 40px;
+}
+
+.text-this {
+  width: 40%;
+  padding-bottom: 20px;
+  margin-right: 60px;
+}
+.flow.part2 {
+  margin-bottom: 130px;
+}
+
+.foot {
+  width: 20%;
+  padding: auto;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: black;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h2,
+footer {
+  padding-top: 20px;
+  color: #fff;
+}
+
+
+
+.mb-3 {
+  width: 30%;
+}
+
+.form-label {
+  color: #fff;
+  font-size: larger;
+  font: 700;
+}
+
+    </style></head>
+<body>
+    <header>
+
+         <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+              <img src="data:image/png;base64,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" alt="logo" srcset="" class="logoimg" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/display" target="_blank"
+                    >Display</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/delete">Delete</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/find">Find</a>
+                </li>
+              </ul>
+              <div class="header_right">
+                <div class="text-lg-end">
+                  <span>Call Us!</span>
+                  <span class="phone_no">+91-9988376442</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container proinfo">
+                      <h2 class="prohead">Add Product</h2>
+                      
+                      <form id="myDIV" class="formdiv find" method="POST" action="/add">
+                      <div class="mb-3">
+                      <label for="addprobyid" class="form-label">ProductID</label>
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="addprobyid"
+                      name="ID" 
+                      
+                      />
+                      </div>
+                      <div class="mb-3">
+                      <label for="addprobyname" class="form-label">Name</label>
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="addprobyname"
+                      name="Name"
+                      aria-describedby="emailHelp"
+                      />
+                      </div>
+                      <div class="mb-3">
+                      <label for="addprobybrand" class="form-label">Brand</label>
+                      <input
+                      type="text"
+                      name="Brand"
+                      class="form-control"
+                      id="addprobybrand"
+                      aria-describedby="emailHelp"
+                      />
+                      </div>
+                      <div class="mb-3">
+                      <label for="addprobyprice" class="form-label">Price</label>
+
+                      <input
+                      type="number"
+                      name="Price"
+                      class="form-control"
+                      id="addprobyprice"
+                      aria-describedby="emailHelp"
+                      />
+                      </div>
+                      <div class="mb-3">
+                      <label for="addprobycategory" class="form-label">Subcategory</label>
+                      <br>
+                      <select name="SubCategory" id="addprobycategory">
+                      <option value="Cooking Oil">Cooking Oil</option>
+                      <option value="Dals">Dals</option>
+                      <option value="Grocery/Rice & Rice Products">
+                      Grocery/Rice & Rice Products
+                      </option>
+                      <option value="Dry Fruits">Dry Fruits</option>
+                      <option value="Grocery/Dry Fruits">Grocery/Dry Fruits</option>
+                      <option value="DMart Grocery/Rice & Rice Products">
+                      DMart Grocery/Rice & Rice Products
+                      </option>
+                      <option value="Flours & Grains">Flours & Grains</option>
+                      <option value="Ghee & Vanaspati">Ghee & Vanaspati</option>
+                      <option value="Grocery/Masala & Spices">
+                      Grocery/Masala & Spices
+                      </option>
+                      <option value="Grocery/Salt / Sugar / Jaggery">
+                      Grocery/Salt / Sugar / Jaggery
+                      </option>
+                      <option value="Hair Care">Hair Care</option>
+                      <option value="Masala & Spices">Masala & Spices</option>
+                      <option value="Pulses">Pulses</option>
+                      <option value="Rice & Rice Products">Rice & Rice Products</option>
+                      <option value="Gourmet Food">Gourmet Food</option>
+                      </select>
+
+
+                      </div>
+                      <div class="mb-3">
+                      <label for="addInputQuantity" class="form-label">Quantity</label>
+                      <input
+                      type="number"
+                      class="form-control"
+                      name="Quantity"
+                      id="addInputQuantity"
+                      aria-describedby="emailHelp"
+                      />
+                      </div>
+                      <div class="mb-3">
+                      <label for="addInputStock" class="form-label">Stock</label>
+                      <input
+                      type="number"
+                      name="Stock"
+                      class="form-control"
+                      id="addInputStock"
+                      aria-describedby="emailHelp"
+                      />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary" ><a href="/"></a>Add Product</button>
+                      </form>
+                      </div>
+                      </body>
+</html>
+    
+

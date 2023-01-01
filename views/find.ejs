@@ -1,0 +1,308 @@
+<!-- <html>
+                      <head><title>Find product</title></head>
+                      <body>
+                        <form method="POST" action="/find">
+                      <label for="">ID</label>
+
+                      <input type="text" name="ID" ><br>
+                      <input type="submit" >
+                        </form>
+                      </body>
+</html> -->
+
+
+<html>
+  <head>
+ <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!--fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./pop.css" /> -->
+    <!-- <link href="./styles/pop.css" rel="stylesheet" type="text/css"> -->
+    <title>Document</title>
+    <style>
+      ::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --bg-white: #fff;
+  --primary-text: #061737;
+  --secondary-color: #60cd12;
+  --light-color: #e2f6de;
+  --dark-color: #03262c;
+
+  --font-primary: "Lucida Sans", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(175, 220, 177, 0.52),
+      rgba(0, 4, 2, 0.73)
+    ),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlJTIwc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body,
+html {
+  color: var(--primary-text);
+  font-size: 10px;
+  font-weight: 400;
+  font-family:monospace;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+li a {
+  color: var(--bg-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+.nav-link {
+  font-size: 2rem;
+  color: var(--bg-white);
+  font: 600;
+  padding-left: 6%;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav {
+  color: var(--bg-white);
+}
+.header .navbar {
+  background-color: #63db4e;
+  margin-top: 2%;
+  border-radius: 1%;
+}
+
+.logoimg {
+  border-radius: 50%;
+  width: 60%;
+  margin-left: 26px;
+}
+
+.text-lg-end {
+  padding-right: 30px;
+  font-size: 1rem;
+  /* padding-left: 3%; */
+  color: var(--bg-white);
+  font: 300;
+}
+/* 
+.discard {
+  width: 20%;
+  color: azure;
+  z-index: 1;
+  background-color: #fff;
+  height: 390px;
+  margin-top: 4%;
+} */
+
+.flow {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 150px;
+}
+
+.card {
+  margin: 20px;
+  /* margin-right: 5%; */
+}
+
+.container-fluid {
+  background-color: var(--bg-white);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 130px;
+  width: 70%;
+}
+
+.shopimg {
+  width: 40%;
+
+  margin-left: 40px;
+}
+
+.text-this {
+  width: 40%;
+  padding-bottom: 20px;
+  margin-right: 60px;
+}
+.flow.part2 {
+  margin-bottom: 130px;
+}
+
+.foot {
+  width: 20%;
+  padding: auto;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: black;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h2,
+footer {
+  padding-top: 20px;
+  color: #fff;
+}
+
+
+
+.mb-3 {
+  width: 30%;
+}
+
+.form-label {
+  color: #fff;
+  font-size: larger;
+  font: 700;
+}
+
+    </style>
+
+
+  </head>
+   <body>
+
+     <header id="full_nav">
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+              <img src="data:image/png;base64,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" alt="logo" srcset="" class="logoimg" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item" style="margin-right: 20px">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/"
+                    target="_blank"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item" style="margin-right: 20px">
+                  <a class="nav-link" href="/add" target="_blank"
+                    >Add</a
+                  >
+                </li>
+                <li class="nav-item" style="margin-right: 20px">
+                  <a class="nav-link" href="/delete">Delete</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px">
+                  <a class="nav-link" href="/display" id="updatethis">Display</a>
+                </li>
+               
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+     <div class="container findinfo">
+      <h2 class="profindhead">Find Product</h2>
+
+      <form id="findid" class="formdivf" method="POST" action="/find">
+        <div class="mb-3">
+          <label for="findprobyid" class="form-label">Product Name</label>
+          <input
+            type="text"
+            name="Name"
+            class="form-control"
+            id="findprobyid"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      
+
+    
+    
+
+      
+    </div>
+
+   </body>
+</html>
+
+                   
+
+   
+

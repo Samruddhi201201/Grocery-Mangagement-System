@@ -1,0 +1,13 @@
+body{
+                      background-color: #285430;
+                      font-family: 'Lato', sans-serif;
+                      color: whitesmoke;
+}
+.fa-cart-shopping{
+                    color: azure;
+}
+.operation{
+                      padding: 20px;
+                      font-size: 20px;
+                      margin: 10px;
+}
